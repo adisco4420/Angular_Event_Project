@@ -9,6 +9,7 @@ import {
   EventService,
   EventDetailsComponent,
   CreateEventComponent,
+  CreateSessionComponent,
   EventListResolver,
   EventRouteActivator
 } from './events/index'
@@ -20,7 +21,7 @@ import { Error404Component } from './errors/404.component';
 import { ToastrService } from './common/toastr.service';
 import { AuthService } from './user/auth.service';
 
-import { appRoutes } from './routes' 
+import { appRoutes } from './routes';
 
 @NgModule({
   imports: [
@@ -37,6 +38,7 @@ import { appRoutes } from './routes'
     EventDetailsComponent,
     CreateEventComponent,
     Error404Component,
+    CreateSessionComponent,
 
   ],
   providers: [

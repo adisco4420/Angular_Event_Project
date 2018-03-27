@@ -13,6 +13,7 @@ export class CreateEventComponent implements OnInit {
               private eventService: EventService) { }
 
   ngOnInit() {
+
   }
   isDirty:boolean = true
 
