@@ -35,6 +35,13 @@
     </div>
 
     <div  class="col-md-7" style="margin-bottom:10px;">
+        <div class="btn-group btn-group-sm" style="margin-right:20px;margin-left:20px">
+          <button class="btn btn-default" (click)="sortBy='name'"
+          [class.active]="sortBy==='name'">By Name</button>
+          <button class="btn btn-default" (click)="sortBy='votes'"
+          [class.active]="sortBy==='votes'">By Votes</button>
+        </div>
+
      <div class="btn-group btn-group-sm">
         <button (click)="filterBy = 'all'" class="btn btn-default" 
         [class.active]="filterBy === 'all'" > All 
@@ -58,7 +65,8 @@
     </div>
   </div>
 
-  <app-session-list [filterBy]="filterBy" *ngIf="!addMode" [sessions]="event?.sessions" >
+  <app-session-list [filterBy]="filterBy" [sortBy]="sortBy"
+  *ngIf="!addMode" [sessions]="event?.sessions" >
 
   </app-session-list>
   
