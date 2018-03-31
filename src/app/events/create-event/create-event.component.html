@@ -24,7 +24,7 @@
     </div>
     <div ngModelGroup="location" #locationGroup="ngModelGroup" validateLocation>
     <div class="form-group"> 
-      <em *ngIf="locationGroup?.invalid && locationGroup?.[;, touched">
+      <em *ngIf="locationGroup?.invalid && locationGroup?.touched">
         You must enter full address OR an online Url
       </em>
       <label for="address">Event Location:</label>
